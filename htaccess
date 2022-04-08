@@ -1,0 +1,60 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page17910934.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^realmaninmoscow$ page25126788.html [NC]
+RewriteRule ^realmaninmoscow/$ page25126788.html [NC]
+
+RewriteRule ^spasibo$ page12444891.html [NC]
+RewriteRule ^spasibo/$ page12444891.html [NC]
+
+RewriteRule ^spb$ page18959770.html [NC]
+RewriteRule ^spb/$ page18959770.html [NC]
+
+RewriteRule ^successspb$ page19083969.html [NC]
+RewriteRule ^successspb/$ page19083969.html [NC]
+
+RewriteRule ^minsk$ page19088192.html [NC]
+RewriteRule ^minsk/$ page19088192.html [NC]
+
+RewriteRule ^successminsk$ page19088197.html [NC]
+RewriteRule ^successminsk/$ page19088197.html [NC]
+
+RewriteRule ^test$ page24024470.html [NC]
+RewriteRule ^test/$ page24024470.html [NC]
+
+RewriteRule ^minsk2022$ page24102724.html [NC]
+RewriteRule ^minsk2022/$ page24102724.html [NC]
+
+RewriteRule ^maxresult2022minsk$ page24185568.html [NC]
+RewriteRule ^maxresult2022minsk/$ page24185568.html [NC]
+
+RewriteRule ^newmanresult2021$ page24540519.html [NC]
+RewriteRule ^newmanresult2021/$ page24540519.html [NC]
+
+RewriteRule ^maxresult2022moscow$ page24620720.html [NC]
+RewriteRule ^maxresult2022moscow/$ page24620720.html [NC]
+
+RewriteRule ^moscow2022$ page24766663.html [NC]
+RewriteRule ^moscow2022/$ page24766663.html [NC]
+
+RewriteRule ^realdatingmoscow$ page24790453.html [NC]
+RewriteRule ^realdatingmoscow/$ page24790453.html [NC]
+
+RewriteRule ^resultminsk2022$ page25063775.html [NC]
+RewriteRule ^resultminsk2022/$ page25063775.html [NC]
+
+RewriteRule ^plominsk2022$ page25367738.html [NC]
+RewriteRule ^plominsk2022/$ page25367738.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3364-3539-4366-b431-323464366339/favicon.ico [R=302,L]
+
